@@ -1,0 +1,89 @@
+Datensatz Kohlekommission SS20 
+Codebuch Stand 2020-08-04
+erstellt von Ricarda Müterthies (rm057@hdm-stuttgart.de)
+
+Inhalt
+•	Edges.csv (Edgelist)
+•	Nodes.csv (Nodelist)
+•	Codebuch.rm (Codierung der Datensätze)
+
+Ursprung und Datenerhebung
+Der Bundestag hat am 3. Juli 2020 den Ausstieg aus dem Kohlestrom bis 2038 beschlossen (Quelle: faz). Dem zuvor arbeitete die sogenannte "Kohlekommission" mehrere Jahre an der Vorbereitung des Ausstiegs. Im Folgenden wird das Netzwerk der Mitglieder der Kohlekommission analysiert.
+Als Grundlage der Datenerhebung diente ein Beitrag des Online-Magazins Klimareporter (www.klimareporter.de/deutschland/das-sind-die-mitglieder-der-kohlekommission). In diesem Beitrag werden alle Mitglieder der Kohlekommission aufgezählt sowie deren Funktion innerhalb der Kommission. Außerdem werden deren Zugehörigkeit zu Organisationen wie beispielsweise Parteien erwähnt.
+Falls eine notwendige Information nicht in diesem Beitrag geklärt wurde, wurden zwei weitere Internetseiten benutzt. Zum einen das Munzinger Archiv (www.munzinger.de) und zum anderen Wikipedia (de.wikipedia.org/wiki/Wikipedia:Hauptseite).
+
+EDGE-Attribute
+
+id
+(eindeutige Codierung des Knoten)
+Nachname der Person bzw. Name der Organisation 
+from (ID Mitglied der Kommision)
+to (alle Mitgliedschaften der Person)
+
+NODE-Attribute
+
+id
+Identische ID wie aus der edgelist zur Identifikation der Knoten 
+
+type
+(Zuordnung zu Person oder Organisation)
+0 = Person
+1 = Organisation
+
+sex
+(Geschlecht der Person)
+1 = weiblich
+2 = männlich
+3 = divers
+
+age
+(Alter der Person)
+1 = bis 40 Jahre
+2 = ab 40 bis 50 Jahre
+3 = ab 50 bis 60 Jahre
+4 = ab 60 und älter
+
+party 
+(Mitgliedschaft in politischer Partei)
+1 = CDU/CSU
+2 = SPD
+3 = Die Grünen
+4 = Die Linke
+5 = FDP
+6 = AfD
+7 = Andere 
+
+representation
+(Funktion innerhalb der Kommission)
+0 = Übergreifend
+1 = Politik
+2 = Wirtschaft 
+3 = Gewerkschaft
+4 = Umwelt
+5 = Regionen
+6 = Wissenschaft
+
+position
+(Vorsitz, Mitglied, kein Stimmrecht)
+1 = Vorsitz
+2 = Mitglied
+3 = kein Stimmrecht
+
+state
+(Bundesland) 
+1 = Schleswig-Holstein
+2 = Hamburg
+3 = Mecklenburg-Vorpommern 
+4 = Niedersachsen
+5 = Bremen
+6 = Sachsen-Anhalt
+7 = Brandenburg
+8 = Berlin
+9 = Nordrhein-Westfalen 
+10 = Hessen
+11 = Thüringen
+12 = Sachsen
+13 = Rheinland-Pfalz
+14 = Saarland
+15 = Baden-Württemberg
+16 = Bayern
